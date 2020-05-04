@@ -11,21 +11,247 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
             <!-- Link to jQuery Library -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+            <!--AJAX link-->
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
     </head>
 
     <body>
         <div class="container">
-            <p>hello world</p>
+            <br>
+            <h1 style="text-align: center;">Survey Questionnaire</h1>
+            <hr>
+            <br>
+            <h2 style="text-align: center;">About You</h2>
+            <form>
+                <div class="form-group">
+                    <label>First & Last Name (Required)</label>
+                    <input type="text" class="form-control" id="userName"></input>
+                </div>
 
+                <div class="form-group">
+                    <label>Link To Photo Image (Required)</label>
+                    <input type="url" class="form-control" id="userImg"></input>
+                </div>
+                <hr>
+                <div>
+                    <h3>Question 1</h3>
+                    <p>It is easy for you to choose a place to eat at when with some friends.</p>
+                        <select class="form-control" style="width: 300px;" id="q1">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    
+                    <br>
+
+                    <h3>Question 2</h3>
+                    <p>You like to let loose and go party on Friday nights.</p>
+                        <select class="form-control" style="width: 300px;" id="q2">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 3</h3>
+                    <p>You respect that everyone is entitled to their own opinions, even if it goes against yours.</p>
+                        <select class="form-control" style="width: 300px;" id="q3">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 4</h3>
+                    <p>You prefer to confront any issues, rather than be passive about it.</p>
+                        <select class="form-control" style="width: 300px;" id="q4">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 5</h3>
+                    <p>In a group of people, you are the outgoing and talkative one.</p>
+                        <select class="form-control" style="width: 300px;" id="q5">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 6</h3>
+                    <p>In a group of people, you always make sure everyone is included in a conversation.</p>
+                        <select class="form-control" style="width: 300px;" id="q6">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 7</h3>
+                    <p>You like to keep up with celebrity gossip and reality tv shows.</p>
+                        <select class="form-control" style="width: 300px;" id="q7">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 8</h3>
+                    <p>You like to joke around and keep things lighthearted.</p>
+                        <select class="form-control" style="width: 300px;" id="q8">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 9</h3>
+                    <p>You prefer to get things done immediately, rather than wait until the very last minute</p>
+                        <select class="form-control" style="width: 300px;" id="q9">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+
+                    <br>
+
+                    <h3>Question 10</h3>
+                    <p>You spend most of your free time playing video games</p>
+                        <select class="form-control" style="width: 300px;" id="q10">
+                            <option value=" " selected disabled>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2 (Disagree)</option>
+                            <option value="3">3 (Mutual, depends on the situation)</option>
+                            <option value="4">4 (Agree)</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                </div>
+
+                <br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit">Submit</button>
+
+            </form>
+            <br>
+            <hr>
         </div>
+        <br>
+            <!-- Modal -->
+            <div class="modal fade" id="friendModal" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Friend is: </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        &times;
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="friendName"></h4>
+                        <img id="friendImg" src="">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 
+        <script type="text/javascript">
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+
+            console.log("submission ran")
+            function validateForm() {
+                var valid = true;
+                $(".form-control").each(function(){
+                    if ($(this).val() === ""){
+                        valid = false;
+                    }
+                });
+                return valid;
+            }
+
+            if (validateForm() == true) {
+                var userInput = {
+                    name: $("#userName").val(),
+                    photo: $("#userImg").val(),
+                    score: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                console.log("we validated")
+                var curURL = window.location.origin;
+
+                
+
+                $.post(curURL + "/api/friends", userInput, function(data){
+                    $("#friendName").text(data.name),
+                    $("#friendImg").attr("src", data.photo),
+                    // $("#friendImg").attr("height", 200),
+                    
+                    $("#friendModal").modal()
+                    console.log("modal was ran through")
+                });
+            }
+            else {
+                alert("Please fill out the entire form before submitting.");
+            }
+        });
+        
+        </script>
             <!--Link to javascript-->
-            <script type="text/javascript" src="../data/friends.js"></script>
-            <script type="text/javascript" src="../routing/apiRoutes.js"></script>
-            <script type="text/javascript" src="../routing/htmlRoutes.js"></script>
-            <script type="text/javascript" src="../server.js"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 
 </html>
