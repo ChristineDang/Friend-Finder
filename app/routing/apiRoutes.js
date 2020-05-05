@@ -14,17 +14,21 @@ module.exports = function(app) {
         var score = 0;
         var topMatch = friends[0];
 
+        //parseInt not working, choices still turning into objects in an array
+            //I think this is causing Ahmed to keep popping up as the friend recommendation
         for (var i in friends) {
-            for (var j = 0; j <5; j++) {
-                score += Math.abs(parseInt(friends[i].scores[j]) - parseInt(req.body.scores[j]));
+            // for (var j = 0; j < 5; j++) {
+            //     score += Math.abs(parseInt(friends[i].score[j]) - parseInt(req.body.score[j]));
+            // }
+            for (var j = 0; j < 5; j++) {
+                score += Math.abs(Number(friends[i].score[j]) - Number(req.body.score[j]));
             }
-            if ((topScore > score) && (user.name != friends[i].name)) {
+            if ((topScore > score)) {
                 topMatch = friends[i];
                 topScore = score;
             }
             score = 0;
         }
-        var 
     });
 
     app.post("/api/clear", function(req, res){
@@ -34,11 +38,11 @@ module.exports = function(app) {
     });
 };
 
+//Previous test method before using past activities as a guide for this assignment
+    // const routes = require("/api/friends")
+    // const routes = require("/api/friends")
 
-// const routes = require("/api/friends")
-// const routes = require("/api/friends")
+    // app.get("/api/friends")
+    // app.post("/api/friends")
 
-// app.get("/api/friends")
-// app.post("/api/friends")
-
-//read update and delete CRUD
+    //read update and delete CRUD

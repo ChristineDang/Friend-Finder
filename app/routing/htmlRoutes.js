@@ -4,27 +4,28 @@ module.exports = function(app) {
     app.get("/survey", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
       });
-      
+
     app.get("*", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
       });
 
     };
-    
-// const express = require('express');
 
-// const router = express.Router();
+//Previous test method before using past activities as a guide for this assignment
+    // const express = require('express');
 
-// router.get('/', (req, res) => {
-//   res.send('It works!');
-// });
-// router.get('../public/survey.html', (req, res) => {
-//   res.send('This is the Survey!');
-// });
-// module.exports = router;
+    // const router = express.Router();
+
+    // router.get('/', (req, res) => {
+    //   res.send('It works!');
+    // });
+    // router.get('../public/survey.html', (req, res) => {
+    //   res.send('This is the Survey!');
+    // });
+    // module.exports = router;
 
 
-// app.get()
+    // app.get()
 
-//react.js vs express.js
-// app.start()
+    //react.js vs express.js
+    // app.start()

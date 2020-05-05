@@ -1,10 +1,11 @@
-// const express = require('express');
-const routes = require('../routing/apiRoutes');
+//Previous test method before using past activities as a guide for this assignment
+    // const express = require('express');
+    // const routes = require('../routing/apiRoutes');
 
-// const app = express();
-// app.use('/', routes);
+    // const app = express();
+    // app.use('/', routes);
 
-// module.exports = app;
+    // module.exports = app;
 
 var friendsArray =[
 {
