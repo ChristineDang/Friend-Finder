@@ -18,7 +18,7 @@ HOW TO USE Friend Finder:
 
 DEPLOYED LINK:
 
-https://christinedang.github.io/Friend-Finder/
+https://pure-earth-88052.herokuapp.com/
 
 TECHNOLOGIES USED:
 * package-lock.json
