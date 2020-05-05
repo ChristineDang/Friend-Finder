@@ -18,7 +18,7 @@ HOW TO USE Friend Finder:
 
 DEPLOYED LINK:
 
-
+https://christinedang.github.io/Friend-Finder/
 
 TECHNOLOGIES USED:
 * package-lock.json
